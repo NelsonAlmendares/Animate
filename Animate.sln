@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.33529.622
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animate", "Animate\Animate.csproj", "{9BA22431-7D68-49DF-A306-679C378968BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Controller\Controller.csproj", "{D5AB404A-3DA3-410E-9ECA-E2763BD61446}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{F7C41921-A69D-4400-8130-950FA73FEFA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{9BA22431-7D68-49DF-A306-679C378968BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BA22431-7D68-49DF-A306-679C378968BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BA22431-7D68-49DF-A306-679C378968BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5AB404A-3DA3-410E-9ECA-E2763BD61446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5AB404A-3DA3-410E-9ECA-E2763BD61446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5AB404A-3DA3-410E-9ECA-E2763BD61446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5AB404A-3DA3-410E-9ECA-E2763BD61446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7C41921-A69D-4400-8130-950FA73FEFA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7C41921-A69D-4400-8130-950FA73FEFA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7C41921-A69D-4400-8130-950FA73FEFA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7C41921-A69D-4400-8130-950FA73FEFA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

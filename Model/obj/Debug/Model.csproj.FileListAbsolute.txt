@@ -1,0 +1,9 @@
+C:\Users\nelso\OneDrive\Escritorio\Entraga 2 MDB\Animate\Model\bin\Debug\Model.dll
+C:\Users\nelso\OneDrive\Escritorio\Entraga 2 MDB\Animate\Model\bin\Debug\Model.pdb
+C:\Users\nelso\OneDrive\Escritorio\Entraga 2 MDB\Animate\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\nelso\OneDrive\Escritorio\Entraga 2 MDB\Animate\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\nelso\OneDrive\Escritorio\Entraga 2 MDB\Animate\Model\obj\Debug\Model.dll
+C:\Users\nelso\OneDrive\Escritorio\Entraga 2 MDB\Animate\Model\obj\Debug\Model.pdb
+C:\Users\nelso\OneDrive\Escritorio\Entraga 2 MDB\Animate\Model\bin\Debug\MySql.Data.dll
+C:\Users\nelso\OneDrive\Escritorio\Entraga 2 MDB\Animate\Model\bin\Debug\MySql.Data.xml
+C:\Users\nelso\OneDrive\Escritorio\Entraga 2 MDB\Animate\Model\obj\Debug\Model.csproj.CopyComplete
