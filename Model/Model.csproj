@@ -45,8 +45,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataModel.cs" />
     <Compile Include="LoginModel.cs" />
+    <Compile Include="Model_Animadores.cs" />
+    <Compile Include="Model_Cliente.cs" />
     <Compile Include="Model_Concection.cs" />
+    <Compile Include="Model_Disfras.cs" />
+    <Compile Include="Model_Factura.cs" />
+    <Compile Include="Model_Presentador.cs" />
+    <Compile Include="Model_Reserva.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -84,7 +84,6 @@ namespace Animate
                 // Asigno el nombre 
                 string usuario = IniciarSesion.getUser(user);
                 dashboard.setUserLabel(usuario);
-
             }
             else
             {

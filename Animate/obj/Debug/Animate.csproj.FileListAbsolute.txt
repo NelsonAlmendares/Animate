@@ -17,3 +17,9 @@ C:\Users\nelso\OneDrive\Escritorio\Entraga 2 MDB\Animate\Animate\bin\Debug\Model
 C:\Users\nelso\OneDrive\Escritorio\Entraga 2 MDB\Animate\Animate\bin\Debug\MySql.Data.xml
 C:\Users\nelso\OneDrive\Escritorio\Entraga 2 MDB\Animate\Animate\bin\Debug\Model.pdb
 C:\Users\nelso\OneDrive\Escritorio\Entraga 2 MDB\Animate\Animate\obj\Debug\Animate.Main.resources
+C:\Users\nelso\OneDrive\Escritorio\Entraga 2 MDB\Animate\Animate\obj\Debug\Animate.Reservas.resources
+C:\Users\nelso\OneDrive\Escritorio\Entraga 2 MDB\Animate\Animate\obj\Debug\Animate.Factura.resources
+C:\Users\nelso\OneDrive\Escritorio\Entraga 2 MDB\Animate\Animate\obj\Debug\Animate.Animadores.resources
+C:\Users\nelso\OneDrive\Escritorio\Entraga 2 MDB\Animate\Animate\obj\Debug\Animate.Clientes.resources
+C:\Users\nelso\OneDrive\Escritorio\Entraga 2 MDB\Animate\Animate\obj\Debug\Animate.Disfraces.resources
+C:\Users\nelso\OneDrive\Escritorio\Entraga 2 MDB\Animate\Animate\obj\Debug\Animate.Presentadores.resources

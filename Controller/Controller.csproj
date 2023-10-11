@@ -45,7 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller_Animador.cs" />
+    <Compile Include="Controller_Cliente.cs" />
     <Compile Include="Controller_Conecction.cs" />
+    <Compile Include="Controller_Disfras.cs" />
+    <Compile Include="Controller_Factura.cs" />
+    <Compile Include="Controller_Presentador.cs" />
+    <Compile Include="Controller_Reserva.cs" />
+    <Compile Include="DataController.cs" />
     <Compile Include="Login_Controller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

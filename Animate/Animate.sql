@@ -53,23 +53,6 @@ GO
 SELECT id_horario AS ID, CONVERT(VARCHAR, hora_inicio, 108) AS Inicio, CONVERT(VARCHAR, hora_fin,108) AS Finalización, tipo_horario AS Horario FROM [dbo].[Horarios];
 GO
 
--- Tabla de Reservaciones de los clientes (Con esta tabla reservo un local para evento, un horario y los animadores para tener el orden de los próximos eventos que serán validados :] )
-CREATE TABLE [dbo].[Reservas] (
-	id_reserva INT NOT NULL IDENTITY (1,1),
-	id_evento  INT NOT NULL,
-	id_cliente INT NOT NULL,
-	id_horario INT NOT NULL,
-	id_animador INT NOT NULL,
-	id_disfraz INT NOT NULL,
-	fecha_reserva DATE NOT NULL,
-	id_estadoReservar INT NOT NULL,
-	-- fecha_Evento DATE NOT NULL, --> Lo tomaré con un data picker de C#
-	PRIMARY KEY (id_reserva)
-);
-GO
-SELECT * FROM [dbo].[Reservas];
-GO
-
 CREATE TABLE [dbo].[EstadoReserva] (
 	id_estadoReserva INT NOT NULL IDENTITY(1,1),
 	estado_reserva VARCHAR(100) NOT NULL,
@@ -87,7 +70,6 @@ CREATE TABLE [dbo].[Animador] (
 );
 SELECT * FROM [dbo].[Animador];
 
-INSERT INTO [dbo].[Animador] ()  VALUES
 
 CREATE TABLE [dbo].[Disfraz] (
 	id_disfraz INT NOT NULL IDENTITY (1,1),
@@ -96,6 +78,23 @@ CREATE TABLE [dbo].[Disfraz] (
 	PRIMARY KEY (id_disfraz)
 );
 SELECT * FROM [dbo].[Disfraz];
+
+-- Tabla de Reservaciones de los clientes (Con esta tabla reservo un local para evento, un horario y los animadores para tener el orden de los próximos eventos que serán validados :] )
+CREATE TABLE [dbo].[Reservas] (
+	id_reserva INT NOT NULL IDENTITY (1,1),
+	id_evento  INT NOT NULL,
+	id_cliente INT NOT NULL,
+	id_horario INT NOT NULL,
+	id_animador INT NOT NULL,
+	id_disfraz INT NOT NULL,
+	fecha_reserva DATE NOT NULL,
+	id_estadoReservar INT NOT NULL,
+	-- fecha_Evento DATE NOT NULL, --> Lo tomaré con un data picker de C#
+	PRIMARY KEY (id_reserva)
+);
+GO
+SELECT * FROM [dbo].[Reservas];
+GO
 
 SELECT [dbo].[Reservas].id_reserva AS 'Reserva N°', nombre_Evento AS Evento, CONCAT (nombre_Cliente, ' ', apellido_Cliente) 
 	AS Cliente, documento_Cliente  AS DUI, 
@@ -121,7 +120,7 @@ GO
 
 -- **************************************** Procedimientos Almacenados **************************************** -- 
 ALTER PROCEDURE ValidateReservas 
-	@horario INT, @evento INT, @cliente INT, @estado INT, @fecha DATE
+	@evento INT, @cliente INT, @horario INT, @animador INT, @disfraz INT, @fecha DATE, @estado INT
 AS
 BEGIN
 	
@@ -130,7 +129,7 @@ BEGIN
 		WHERE id_horario = @horario AND fecha_reserva = @fecha
 	)
 	BEGIN
-		INSERT INTO [dbo].[Reservas] (id_evento, id_cliente, id_horario, fecha_reserva, id_estadoReservar)
+		INSERT INTO [dbo].[Reservas] (id_evento, id_cliente, id_horario, id_a)
 		VALUES (@evento, @cliente, @horario, @fecha, @estado);
 	END
 	ELSE
@@ -196,7 +195,7 @@ SELECT @@SERVERNAME AS 'Nombre del servidor'
 	-> Debo validar con un IF la insercciones de los eventos más adelante por que con eso defino los horarios que ya no están disponibles
 	-> Al momento de realizar la reserva puedo crear un procedimiento para poder selaccionar los datos que quiero evaluar antes de ser ingresados (probar antes de dejar como cambio definiitvo)
 	-> 
-* /
+*/
 
 SELECT CONVERT(VARCHAR, hora_inicio, 108) AS Inicio,
 	CASE

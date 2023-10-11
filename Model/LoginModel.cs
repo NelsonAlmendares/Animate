@@ -57,8 +57,8 @@ namespace Model
             }
             catch (Exception ex)
             {
-                return user = null;
                 Console.WriteLine("ERROR: " + ex);
+                return user = null;
             }
         }
     }
